@@ -11,7 +11,7 @@ const corsOptions = {
 }
 app.use(cors(corsOptions))
 
-const url = 'mongodb+srv://devilrocks47:ripazha@cluster0.cckyakd.mongodb.net/flutterapp';
+const url = 'your mongodb database link';
 const client = new MongoClient(url);
 
 app.get("/getdata", async(req,res)=>{
